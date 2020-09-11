@@ -40,8 +40,8 @@ class LinkedList:
 
     def reverse_list(self, node, prev):
         prev = None
-        current = self.head
-        while current is not None:
+        current = self.head #puts us at the beginning of the list
+        while current is not None: #triggers a loop through the list, which will switch positions as we loop through the list
             next = current.next_node
             current.next_node = prev
             prev = current

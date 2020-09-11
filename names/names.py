@@ -18,6 +18,8 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
+# Uses the set() function for the list of names, then loops through more efficently to
+# compare the contents of the lists.
 nameset2 = set(names_2)
 duplicates = [ values for values in names_1 if values in nameset2]
             
